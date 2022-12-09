@@ -1,16 +1,14 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import Characters from "../component/Characters.jsx";
-import Planets from "../component/Planets.jsx";
+import PlanetSingle from "../component/PlanetSingle.jsx";
 
-export const Home = () => {
+export const Planet = () => {
   const { store, actions } = useContext(Context);
 
   return (
     <>
-      <Characters />
-      <Planets />
+      <PlanetSingle />
     </>
   );
 };
